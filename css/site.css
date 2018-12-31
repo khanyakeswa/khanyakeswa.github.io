@@ -1,0 +1,41 @@
+.section {
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.section.top {
+  max-height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #e54e40 url(/logo.svg) no-repeat center center;
+  background-size: contain;
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+}
+
+.splash {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  left: 30vw;
+  bottom: 50px;
+  background: url(/splash_1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.header {
+  position: absolute;
+  left: 50px;
+  top: 50vh;
+  color: #4d4d4f;
+  font-size: 50px;
+  font-family: 'Ailerons', sans-serif;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+}
