@@ -13,14 +13,17 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
 
-    <link rel="stylesheet" href="https://use.typekit.net/bcw7brl.css">
-    <link rel="stylesheet" href="fonts/ailerons/ailerons.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bcw7brl.css" />
+    <link rel="stylesheet" href="fonts/ailerons/ailerons.css" />
+    <link rel="stylesheet" href="fonts/metropolis/metropolis.css" />
 
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+   
   </head>
 
   <body>
@@ -34,14 +37,49 @@
 
     <!-- Add your site or application content here -->
     <main>
-      <div class="section top">
+      <div class="scroll-button">
+        <div class="scroll-up"></div>
+        <div class="scroll-down"></div>
+      </div>
+      <div class="portfolio-button">
+        <div class="button-content">PORTFOLIO</div>
+        <div class="button-graphic"></div>
+      </div>
+      <div class="scene">
+        <div class="carousel">
+          <div class="carousel-cell">UX/UI Designer</div>
+          <div class="carousel-cell">Industrial Designer</div>
+          <div class="carousel-cell">UX/UI Designer</div>
+          <div class="carousel-cell">Industrial Designer</div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="title">
+          <div class="name">Hi! I'm Khanya Keswa,</div>
+          <div class="underscore"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="link">Home</div>
+        <div class="link">About Me</div>
+        <div class="link">My Process</div>
+        <div class="link">Portfolio</div>
+        <div class="link">Latest Work</div>
+      </div>
+      <div class="sectiontop">
         <div class="logo"></div>
         <div class="splash"></div>
-        <div class="header">khanya keswa</div>
+        <div class="header"></div>
+      </div>
+      <div class="section about-me">
+        <div class="splash"></div>
+        <div class="header"></div>
       </div>
     </main>
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/carousel.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -53,6 +91,8 @@
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

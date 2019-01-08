@@ -1,3 +1,76 @@
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 200vh;
+  width: 35vw;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  transform: translateX(0);
+  transition: transform 1s;
+}
+.collapsed .sidebar {
+  transform: translateX(-30vw);
+}
+
+.title {
+  font-size: 3vw;
+  padding: 40vh 10% 0 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title .name {
+  font-family: 'Metropolis Regular', sans-serif;
+  color: #505050;
+}
+
+.title .role {
+  font-family: 'Metropolis Semibold', sans-serif;
+  color: #e54e40;
+}
+
+.title .underscore {
+  height: 8vw;
+  width: 5vw;
+  border: 0;
+  border-bottom: 4px solid #e54e40;
+  margin-left: .1vw;
+}
+
+.navbar {
+  font-family: 'Metropolis Regular', sans-serif;
+  color: #4d4d4f;
+  background: #ffffff;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  height: 5vw;
+  width: 70vw;
+  left: 35vw;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  transform: translateX(0);
+  transition: transform 1s;
+}
+.collapsed .navbar {
+  transform: translateX(-30vw);
+}
+
+.link {
+  padding: 0 0 0 3vw;
+  transition: color 300ms;
+  cursor: pointer;
+  user-select: none;
+}
+
+.link:hover {
+  color: #e54e40;
+  font-weight: 500;
+}
+
 .section {
   min-height: 100vh;
   position: relative;
@@ -9,22 +82,24 @@
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   background: #e54e40 url(/logo.svg) no-repeat center center;
-  background-size: contain;
+  background-size: 50px;
   color: #ffffff;
-  height: 50px;
-  width: 50px;
+  height: 5vw;
+  width: 5vw;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
 
-.splash {
+.section-top .splash {
   position: absolute;
-  top: 50px;
-  right: 50px;
-  left: 30vw;
-  bottom: 50px;
+  top: 5vw;
+  right: 5vw;
+  left: 35vw;
+  bottom: 5vw;
   background: url(/splash_1.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -38,4 +113,35 @@
   font-family: 'Ailerons', sans-serif;
   text-transform: uppercase;
   transform: translateY(-50%);
+}
+
+.portfolio-button {
+  background: #ffffff;
+  border: 3px solid #e54e40;
+  position: absolute;
+  left: 5vw;
+  bottom: 5vw;
+  height: 25px;
+  width: 120px;
+  z-index: 1;
+  display: flex;
+  align-content: center;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-button .button-content {
+  font-family: 'Metropolis Semibold';
+  font-size: 12px;
+  color: #e54e40;
+  margin-top: 6px;
+  padding: 0 0 0 10px;
+}
+
+.portfolio-button .button-graphic {
+  background: url(/arrow.svg) no-repeat;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 5px;
+  top: 8px;
 }
