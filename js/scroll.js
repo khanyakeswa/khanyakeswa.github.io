@@ -5,10 +5,10 @@ let ticking = false;
 let isCollapsed = false;
 
 function doSomething(scroll_pos) {
-  console.log('scroll', scroll_pos)
+  console.log('scroll', scroll_pos, window.innerHeight)
   // navbar.style.transform = `translateX(${scroll_pos}px)`
   // Do something with the scroll position
-  const isScrolledPastTopSection = scroll_pos > window.innerHeight;
+  const isScrolledPastTopSection = scroll_pos >= window.innerHeight;
   if (!isCollapsed && isScrolledPastTopSection) {
     document.body.classList.add('collapsed');
     isCollapsed = true;
