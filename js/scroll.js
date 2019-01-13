@@ -1,4 +1,4 @@
-const navbar = document.querySelector('.navbar')
+const navbar = document.querySelector('.navbar', '.portfolio-button')
 
 let last_known_scroll_position = 0;
 let ticking = false;
@@ -8,7 +8,7 @@ function doSomething(scroll_pos) {
   console.log('scroll', scroll_pos, window.innerHeight)
   // navbar.style.transform = `translateX(${scroll_pos}px)`
   // Do something with the scroll position
-  const isScrolledPastTopSection = scroll_pos >= window.innerHeight;
+  const isScrolledPastTopSection = scroll_pos >= (0.5 * (window.innerHeight));
   if (!isCollapsed && isScrolledPastTopSection) {
     document.body.classList.add('collapsed');
     isCollapsed = true;

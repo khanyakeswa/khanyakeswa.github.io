@@ -1,8 +1,6 @@
-.scene {
-  position: absolute;
-  width: 30vw;
+.sidebar .scene {
+  width: 35vw;
   height: 75px;
-  margin-top: 55vh;
 }
 
 .carousel {
@@ -20,9 +18,8 @@
 }
 
 .carousel-cell {
-  margin-left: 5vw;
   position: absolute;
-  width: 35vw;
+  width: 30vw;
   height: 80px;
   top: 0px;
   line-height: 80px;
