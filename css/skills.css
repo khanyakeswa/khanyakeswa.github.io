@@ -5,7 +5,7 @@
 }
 
 .section.skills .title {
-  margin: 7.5vw 0 0 10vw;
+  margin: 10vw 0 0 10vw;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,16 @@
   margin: 0 5vw 0 5vw;
 }
 
-.section.skills .charts .chart.UI-UX {
+.section.skills .charts .category {
+  position: relative;
+  left: 40%;
+  padding-bottom: 3vh;
+  font-family: 'Metropolis Regular';
+  font-size: 15px;
+  color: #e54e40;
+}
+
+.section.skills .charts .UI-UX {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -44,14 +53,16 @@
   background-size: cover;
 }
 
-.section.skills .charts .chart.Industrial {
+.section.skills .charts .Industrial {
   position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
   background-size: cover;
 }
-.section.skills .charts .chart.misc {
+
+
+.section.skills .charts .misc {
   position: relative;
   display: flex;
   flex-direction: column;

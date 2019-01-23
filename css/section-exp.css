@@ -1,0 +1,196 @@
+.section.exp {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.15);
+}
+
+.section.exp .title {
+  margin: 10vw 0 0 10vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section.exp .title .header {
+  position: relative;
+  font-family: 'Metropolis Regular';
+  font-size: 2vw;
+  color: #505050;
+}
+
+.section.exp .title .underscore {
+  position: relative;
+  height: 8vh;
+  width: 5vw;
+  border: 0;
+  border-top: 0.25vw solid #e54e40;
+  margin: 2vw 0 0 0.1vw;
+}
+
+.section.exp .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5vw 0 10vw;
+}
+
+.section.exp .jobs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.section.exp .text{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 19.25vw;
+  margin: 0 2vw 0 0;
+}
+
+.section.exp .header .role {
+  padding: 0 15px 0 0;
+  font-family: 'Metropolis Semibold';
+  font-size: 15px;
+  color: #e54e40
+}
+
+.section.exp .header .location {
+  font-family: 'Metropolis Regular';
+  font-size: 15px;
+  color: #505050
+}
+
+.section.exp .position {
+  font-family: 'Metropolis Regular';
+  font-size: 15px;
+  color: #505050;
+}
+
+.section.exp .description {
+  font-family: 'Metropolis Regular';
+  font-size: 15px;
+  color: #505050;
+  margin-top: 15px;
+}
+
+.section.exp .timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section.exp .timeline-svg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 3vh 0 3vh 0;
+}
+
+.section.exp .timeline .dates {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.section.exp .timeline .dates .mmddyy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Metropolis Regular';
+  font-size: 15px;
+  color: #505050;
+  width: 21.25vw;
+}
+
+.job-1 {
+  position: relative;
+  opacity: 0;
+  transition: opacity .75s;
+  transition-delay: 0s;
+}
+
+.transitioned .job-1 {
+  opacity: 1;
+}
+
+.job-2 {
+  position: relative;
+  opacity: 0;
+  transition: opacity .75s;
+  transition-delay: .5s;
+}
+
+.transitioned .job-2 {
+  opacity: 1;
+}
+
+.job-3 {
+  position: relative;
+  opacity: 0;
+  transition: opacity .75s;
+  transition-delay: 1s;
+}
+
+.transitioned .job-3 {
+  opacity: 1;
+}
+
+.job-4 {
+  position: relative;
+  opacity: 0;
+  transition: opacity .75s;
+  transition-delay: 1.5s;
+}
+
+.transitioned .job-4 {
+  opacity: 1;
+}
+
+.mmddyy.one {
+  position: relative;
+  opacity: 0;
+  transition: opacity .75s;
+  transition-delay: 0s;
+}
+
+.transitioned .mmddyy.one {
+  opacity: 1;
+}
+
+.mmddyy.two {
+  position: relative;
+  opacity: 0;
+  transition: opacity .75s;
+  transition-delay: .5s;
+}
+
+.transitioned .mmddyy.two {
+  opacity: 1;
+}
+
+.mmddyy.three {
+  position: relative;
+  opacity: 0;
+  transition: opacity .75s;
+  transition-delay: 1s;
+}
+
+.transitioned .mmddyy.three {
+  opacity: 1;
+}
+
+.mmddyy.four {
+  position: relative;
+  opacity: 0;
+  transition: opacity .75s;
+  transition-delay: 1.5s;
+}
+
+.transitioned .mmddyy.four {
+  opacity: 1;
+}

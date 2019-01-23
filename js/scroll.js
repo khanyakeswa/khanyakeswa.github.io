@@ -3,6 +3,7 @@ const navbar = document.querySelector('.navbar', '.portfolio-button')
 let last_known_scroll_position = 0;
 let ticking = false;
 let isCollapsed = false;
+let isTransitioned = false;
 
 function doSomething(scroll_pos) {
   console.log('scroll', scroll_pos, window.innerHeight)
@@ -20,7 +21,7 @@ function doSomething(scroll_pos) {
     console.log('uncollapsing');
   }
 
-  const isScrolledPastAboutMe = scroll_pos >= (2 * window.innerHeight);
+  const isScrolledPastAboutMe = scroll_pos >= (1.5 * window.innerHeight);
   if (!LottieAnimations.hasSkillsGraph1Played && isScrolledPastAboutMe){
     LottieAnimations.skillsGraph1.play();
     LottieAnimations.hasSkillsGraph1Played = true;
@@ -34,6 +35,17 @@ function doSomething(scroll_pos) {
     LottieAnimations.hasSkillsGraph3Played = true;
   }
 
+  isScrolledPastExp = scroll_pos >= (2.5 * window.innerHeight);
+  if (!isTransitioned && isScrolledPastExp) {
+    document.body.classList.add('transitioned');
+    isTransitioned = true;
+    console.log('transition');
+  }
+  if (isTransitioned && !isScrolledPastExp) {
+    document.body.classList.add('transitioned');
+    isTransitioned = false;
+    console.log('transition');
+  }
 }
 
 window.addEventListener('scroll', function(e) {

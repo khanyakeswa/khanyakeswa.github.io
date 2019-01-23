@@ -3,9 +3,9 @@
   background: #ffffff;
   left: 0;
   top: 0;
-  height: 300vh;
+  height: 400vh;
   width: 35vw;
-  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
   z-index: 2;
   transform: translateX(0);
   transition: transform .5s;
@@ -44,8 +44,8 @@
 .navbar {
   font-family: 'Metropolis Regular', sans-serif;
   color: #505050;
-  background: #ffffff;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.075);
   position: fixed;
   height: 5vw;
   width: 97vw;
@@ -62,6 +62,7 @@
 }
 
 .link {
+  font-size: 15px;
   padding: 0 0 0 3vw;
   transition: color 300ms;
   cursor: pointer;

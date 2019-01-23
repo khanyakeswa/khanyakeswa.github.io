@@ -1,0 +1,17 @@
+<svg class="timeline-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 12.5" preserveAspectRatio="xMinYMin">
+  <circle class="circle-marker" cx="6.25" cy="6.25" r="6.25" fill="#e54e40"/>
+  <circle class="circle-1" cx="38.66" cy="6.25" r="2.5" fill="#58595b" opacity=".5" stroke="#e54e3f" stroke-miterlimit="10" stroke-width="0"/>
+  <circle class="circle-2" cx="71.07" cy="6.25" r="2.5" fill="#636466" opacity=".5"/>
+  <circle class="circle-3" cx="103.49" cy="6.25" r="2.5" fill="#6d6e71" opacity=".5"/>
+  <circle class="circle-4" cx="135.9" cy="6.25" r="2.5" fill="#77787b" opacity=".5"/>
+  <circle class="circle-5" cx="168.31" cy="6.25" r="2.5" fill="#808285" opacity=".5"/>
+  <circle class="circle-6" cx="233.13" cy="6.25" r="2.5" fill="#939598" opacity=".5"/>
+  <circle class="circle-7" cx="297.96" cy="6.25" r="2.5" fill="#a7a9ac" opacity=".5"/>
+  <circle class="circle-8" cx="362.78" cy="6.25" r="2.5" fill="#bcbec0" opacity=".5"/>
+  <circle class="circle-9" cx="427.61" cy="6.25" r="2.5" fill="#d1d3d4" opacity=".5"/>
+  <circle class="circle-10" cx="200.72" cy="6.25" r="2.5" fill="#8a8c8e" opacity=".5"/>
+  <circle class="circle-11" cx="265.55" cy="6.25" r="2.5" fill="#9d9fa2" opacity=".5"/>
+  <circle class="circle-12" cx="330.37" cy="6.25" r="2.5" fill="#b1b3b6" opacity=".5"/>
+  <circle class="circle-13" cx="395.2" cy="6.25" r="2.5" fill="#c7c8ca" opacity=".5"/>
+  <path fill="none" d="M449.5 3.75h.5v5h-.5z"/>
+</svg>
