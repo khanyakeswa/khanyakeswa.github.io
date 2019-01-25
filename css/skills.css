@@ -38,11 +38,11 @@
 
 .section.skills .charts .category {
   position: relative;
-  left: 40%;
+  left: calc(50% - 40px);
   padding-bottom: 3vh;
   font-family: 'Metropolis Regular';
   font-size: 15px;
-  color: #e54e40;
+  color: #505050;
 }
 
 .section.skills .charts .UI-UX {

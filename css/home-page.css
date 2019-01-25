@@ -3,7 +3,7 @@
   background: #ffffff;
   left: 0;
   top: 0;
-  height: 400vh;
+  height: 600vh;
   width: 35vw;
   box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
   z-index: 2;
@@ -129,9 +129,15 @@
   z-index: 3;
   display: flex;
   align-content: center;
-  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 300ms, transform .5s;
   transform: translateX(0);
-  transition: transform .5s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.portfolio-button:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .collapsed .portfolio-button {
@@ -154,6 +160,7 @@
   right: 5px;
   top: 8px;
 }
+
 html {
   overflow: scroll;
   overflow-x: hidden;

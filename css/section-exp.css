@@ -114,7 +114,7 @@
   transition-delay: 0s;
 }
 
-.transitioned .job-1 {
+.transitioned-exp .job-1 {
   opacity: 1;
 }
 
@@ -125,7 +125,7 @@
   transition-delay: .5s;
 }
 
-.transitioned .job-2 {
+.transitioned-exp .job-2 {
   opacity: 1;
 }
 
@@ -136,7 +136,7 @@
   transition-delay: 1s;
 }
 
-.transitioned .job-3 {
+.transitioned-exp .job-3 {
   opacity: 1;
 }
 
@@ -147,7 +147,7 @@
   transition-delay: 1.5s;
 }
 
-.transitioned .job-4 {
+.transitioned-exp .job-4 {
   opacity: 1;
 }
 
@@ -158,7 +158,7 @@
   transition-delay: 0s;
 }
 
-.transitioned .mmddyy.one {
+.transitioned-exp .mmddyy.one {
   opacity: 1;
 }
 
@@ -169,7 +169,7 @@
   transition-delay: .5s;
 }
 
-.transitioned .mmddyy.two {
+.transitioned-exp .mmddyy.two {
   opacity: 1;
 }
 
@@ -180,7 +180,7 @@
   transition-delay: 1s;
 }
 
-.transitioned .mmddyy.three {
+.transitioned-exp .mmddyy.three {
   opacity: 1;
 }
 
@@ -191,6 +191,43 @@
   transition-delay: 1.5s;
 }
 
-.transitioned .mmddyy.four {
+.transitioned-exp .mmddyy.four {
   opacity: 1;
+}
+
+.resume-button {
+  background: #ffffff;
+  border: 3px solid #e54e40;
+  position: absolute;
+  left: 10vw;
+  height: 25px;
+  width: 120px;
+  bottom: 5vw;
+  display: flex;
+  align-content: center;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 300ms;
+  cursor: pointer;
+  user-select: none;
+}
+
+.resume-button .button-content {
+  font-family: 'Metropolis Semibold';
+  font-size: 12px;
+  color: #e54e40;
+  margin-top: 6px;
+  padding: 0 0 0 10px;
+}
+
+.resume-button .button-graphic {
+  background: url(/arrow.svg) no-repeat;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 5px;
+  top: 8px;
+}
+
+.resume-button:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
 }
