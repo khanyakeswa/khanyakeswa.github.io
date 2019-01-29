@@ -1,139 +1,99 @@
 .section.about-me {
-  max-height: 100vh;
-  display: flex;
-  flex-direction: row;
   box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.075);
+  display: flex;
 }
 
+.section.about-me .left {
+  display: flex;
+  flex: 0 0;
+}
+
+.section.about-me .right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 5vw 0 0 5vw;
+}
 
 .section.about-me .splash {
-  position: relative;
-  width: 30vw;
-  margin: 5vw 0 5vw 5vw;
+  flex: 1;
+  min-width: 275px;
   background: url(/splash_2.jpg) no-repeat center center;
   background-size: cover;
 }
 
-.section.about-me .body {
-  position: relative;
+.section.about-me .content {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 5vw;
-}
-
-.section.about-me .body .content {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  margin: 0 5vw 0 5vw;
-  background-size: cover;
+  padding-top: 5vw;
 }
 
 .section.about-me .title {
-  margin: 10vw 0 0 5vw;
-  position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.section.about-me .body .title .header {
-  position: relative;
+.section.about-me .title .header {
   font-family: 'Metropolis Regular';
-  font-size: 2vw;
+  font-size: 37px;
   color: #505050;
 }
 
-.section.about-me .body .title .header.sub {
-  position: relative;
-  font-family: 'Metropolis Regular';
-  font-size: 2vw;
+.section.about-me .title .header.sub {
   color: #e54e40;
 }
 
-.section.about-me .body .title .underscore {
-  position: relative;
-  height: 8vh;
-  width: 5vw;
-  border: 0;
-  border-top: .25vw solid #e54e40;
-  margin: 2vw 0 0 .1vw;
+.section.about-me .title .underscore {
+  border-top: 0.25vw solid #e54e40;
+  margin-top: 40px;
+  max-width: 100px;
+  min-width: 100px;
 }
 
-.section.about-me .body .UI-UX {
-  position: relative;
+.section.about-me .half {
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
+  position: relative;
+}
+.section.about-me .half:first-child {
+  padding-left: 0;
+}
+.section.about-me .half:last-child {
+  padding-right: 0;
 }
 
-.section.about-me .body .UI-UX .graphics {
-  position: relative;
+.section.about-me .half .graphics {
   display: flex;
+  height: 25vh;
   justify-content: center;
-  margin: 0 10% 0 10%;
-  height: 25vh;
-}
-
-.section.about-me .body .UI-UX .graphics .g-1 {
-  background: url(/UX_UI_1.svg) no-repeat center center;
-  background-size: contain;
-  margin: 0 5% 0 5%;
-  width: 15vw;
-  height: 25vh;
-}
-
-.section.about-me .body .UI-UX .graphics .g-2 {
-  background: url(/VCD_1.svg) no-repeat center center;
-  background-size: contain;
-  margin: 0 5% 0 5%;
-  width: 15vw;
-  height: 25vh;
-}
-
-.section.about-me .body .UI-UX .caption {
   position: relative;
+}
+
+.section.about-me .half .graphic {
+  background: no-repeat center center;
+  background-size: contain;
+  flex: 1;
+}
+
+.section.about-me .ui-ux .graphic.first {
+  background-image: url(/UX_UI_1.svg);
+}
+
+.section.about-me .ui-ux .graphic.second {
+  background-image: url(/VCD_1.svg);
+}
+
+.section.about-me .industrial .graphic.first {
+  background-image: url(/Sketching_1.svg);
+}
+
+.section.about-me .industrial .graphic.second {
+  background-image: url(/CAD_1.svg);
+}
+
+.section.about-me .half .caption {
   font-family: 'Metropolis Light';
-  background-size: cover;
-  padding: 0 5% 0 5%;
   font-size: 15px;
+  padding-top: 30px;
+  color: #505050;
 }
-
-.section.about-me .body .Industrial {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.section.about-me .body .Industrial .graphics {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 10% 0 10%;
-  height: 25vh;
-}
-
-.section.about-me .body .Industrial .graphics .g-1 {
-  background: url(/Sketching_1.svg) no-repeat center center;
-  background-size: contain;
-  margin: 0 5% 0 5%;
-  width: 15vw;
-  height: 25vh;
-}
-
-.section.about-me .body .Industrial .graphics .g-2 {
-  background: url(/CAD_1.svg) no-repeat center center;
-  background-size: contain;
-  margin: 0 5% 0 5%;
-  width: 15vw;
-  height: 25vh;
-}
-
-.section.about-me .body .Industrial .caption {
-  position: relative;
-  font-family: 'Metropolis Light';
-  background-size: cover;
-  padding: 0 5% 0 5%;
-  font-size: 15px;
-}
-

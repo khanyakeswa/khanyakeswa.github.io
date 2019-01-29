@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="css/section-process.css" />
     <link rel="stylesheet" href="css/scroll-indicators.css" />
     <link rel="stylesheet" href="css/scroll-buttons.css" />
+    <link rel="stylesheet" href="css/link-underscore.css" />
+    <link rel="stylesheet" href="css/section-color-bar.css" />
+    <link rel="stylesheet" href="css/section-portfolio.css" />
+    <link rel="stylesheet" href="css/modal.css" />
   </head>
 
   <body>
@@ -125,31 +129,67 @@
           </svg>
         </div>
       </div>
-      <div class="portfolio-button">
-        <div class="button-content">PORTFOLIO</div>
-        <div class="button-graphic"></div>
-      </div>
       <div class="sidebar">
-        <div class="title">
-          <div class="name">Hi! I'm Khanya Keswa,</div>
-          <div class="scene">
-            <div class="carousel">
-              <div class="carousel-cell">UX/UI Designer</div>
-              <div class="carousel-cell">Industrial Designer</div>
-              <div class="carousel-cell">UX/UI Designer</div>
-              <div class="carousel-cell">Industrial Designer</div>
+        <div class="top">
+          <div class="title">
+            <div class="name">Hi! I'm Khanya Keswa,</div>
+            <div class="scene">
+              <div class="carousel">
+                <div class="carousel-cell">UX/UI Designer</div>
+                <div class="carousel-cell">Industrial Designer</div>
+                <div class="carousel-cell">UX/UI Designer</div>
+                <div class="carousel-cell">Industrial Designer</div>
+              </div>
+            </div>
+            <div class="underscore"></div>
+          </div>
+          <div class="portfolio-button-wrapper">
+            <div class="portfolio-button">
+              <div class="button-content">PORTFOLIO</div>
+              <div class="button-graphic">
+                <svg
+                  width="6px"
+                  height="9px"
+                  viewBox="0 0 6 9"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="website_1"
+                      transform="translate(-196.000000, -680.000000)"
+                      fill="#E54E40"
+                    >
+                      <g
+                        id="Group-3"
+                        transform="translate(196.000000, 680.000000)"
+                      >
+                        <path
+                          d="M3.045,3.58455 C3.378,3.87155 3.378,4.33455 3.045,4.62255 C2.089,5.44755 1.147,6.26055 0.192,7.07355 C-0.098,7.31055 -0.04,7.62355 0.236,7.89855 L0.38,8.01155 C0.728,8.31055 1.206,8.24855 1.554,7.94855 L5.406,4.62255 C5.739,4.33455 5.739,3.87155 5.406,3.58455 L1.553,0.25855 C1.206,-0.04145 0.728,-0.10345 0.38,0.19655 L0.235,0.32055 C-0.04,0.58355 -0.098,0.89655 0.192,1.13455 C1.147,1.94655 2.089,2.77155 3.045,3.58455"
+                          id="Fill-1"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
             </div>
           </div>
-          <div class="underscore"></div>
-          <div class="bar"></div>
         </div>
       </div>
       <div class="navbar">
-        <div class="link">Home</div>
-        <div class="link">About Me</div>
-        <div class="link">My Process</div>
-        <div class="link">Portfolio</div>
-        <div class="link">Latest Work</div>
+        <div class="link home">Home</div>
+        <div class="link about-me">About Me</div>
+        <div class="link process">My Process</div>
+        <div class="link portfolio">Portfolio</div>
+        <div class="link latest-work">Latest Work</div>
       </div>
       <div class="section top">
         <div class="logo"></div>
@@ -157,19 +197,18 @@
         <div class="header"></div>
       </div>
       <div class="section about-me">
-        <div class="header"></div>
-        <div class="splash"></div>
-        <div class="body">
+        <div class="left"><div class="splash"></div></div>
+        <div class="right">
           <div class="title">
             <div class="header">I'm a process driven creator, and value</div>
             <div class="header sub">purposeful design</div>
             <div class="underscore"></div>
           </div>
           <div class="content">
-            <div class="UI-UX">
+            <div class="half ui-ux">
               <div class="graphics">
-                <div class="g-1"></div>
-                <div class="g-2"></div>
+                <div class="graphic first"></div>
+                <div class="graphic second"></div>
               </div>
               <div class="caption">
                 I have extensive exposure to UI/UX, Graphic Design, and the
@@ -178,10 +217,10 @@
                 ventures.
               </div>
             </div>
-            <div class="Industrial">
+            <div class="half industrial">
               <div class="graphics">
-                <div class="g-1"></div>
-                <div class="g-2"></div>
+                <div class="graphic first"></div>
+                <div class="graphic second"></div>
               </div>
               <div class="caption">
                 I'm traditionally trained in Industrial Design, and affluent in
@@ -196,24 +235,19 @@
       <div class="section skills">
         <div class="body">
           <div class="title">
-            <div class="header">Skills and Knowledge</div>
+            <div class="header">Skills and Tools</div>
             <div class="underscore"></div>
           </div>
           <div class="content">
             <div class="charts">
-              <div class="UI-UX">
-                <div class="category UI-UX">UI/UX</div>
-                <div class="chart UI-UX"></div>
-              </div>
-              <div class="Industrial">
-                <div class="category Industrial">Industrial Design</div>
-                <div class="chart Industrial"></div>
-              </div>
-              <div class="misc">
-                <div class="category misc">Miscellaneous</div>
-                <div class="chart misc"></div>
-              </div>
-              <div class="chart misc"></div>
+              <div class="UI-UX"><div class="chart UI-UX"></div></div>
+              <div class="Industrial"><div class="chart Industrial"></div></div>
+              <div class="misc"><div class="chart misc"></div></div>
+            </div>
+            <div class="categories">
+              <div class="category UI-UX">UI/UX Design</div>
+              <div class="category Industrial">Industrial Design</div>
+              <div class="category misc">Miscellaneous</div>
             </div>
           </div>
         </div>
@@ -726,7 +760,7 @@
               </div>
             </div>
             <div class="jobs">
-              <div class="job-1">
+              <div class="job first">
                 <div class="text">
                   <div class="header">
                     <div class="role">Decent</div>
@@ -742,7 +776,7 @@
                   </div>
                 </div>
               </div>
-              <div class="job-2">
+              <div class="job second">
                 <div class="text">
                   <div class="header">
                     <div class="role">BMW Group Designworks</div>
@@ -758,7 +792,7 @@
                   </div>
                 </div>
               </div>
-              <div class="job-3">
+              <div class="job third">
                 <div class="text">
                   <div class="header">
                     <div class="role">Design Central</div>
@@ -772,7 +806,7 @@
                   </div>
                 </div>
               </div>
-              <div class="job-4">
+              <div class="job fourth">
                 <div class="text">
                   <div class="header">
                     <div class="role">Bresslergroup</div>
@@ -788,34 +822,86 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="resume-button">
-          <div class="button-content">RESUME</div>
-          <div class="button-graphic"></div>
+          <div class="resume-button-wrapper">
+            <div class="resume-button">
+              <div class="button-content">RESUME</div>
+              <div class="button-graphic">
+                <svg
+                  width="6px"
+                  height="9px"
+                  viewBox="0 0 6 9"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="website_1"
+                      transform="translate(-196.000000, -680.000000)"
+                      fill="#E54E40"
+                    >
+                      <g
+                        id="Group-3"
+                        transform="translate(196.000000, 680.000000)"
+                      >
+                        <path
+                          d="M3.045,3.58455 C3.378,3.87155 3.378,4.33455 3.045,4.62255 C2.089,5.44755 1.147,6.26055 0.192,7.07355 C-0.098,7.31055 -0.04,7.62355 0.236,7.89855 L0.38,8.01155 C0.728,8.31055 1.206,8.24855 1.554,7.94855 L5.406,4.62255 C5.739,4.33455 5.739,3.87155 5.406,3.58455 L1.553,0.25855 C1.206,-0.04145 0.728,-0.10345 0.38,0.19655 L0.235,0.32055 C-0.04,0.58355 -0.098,0.89655 0.192,1.13455 C1.147,1.94655 2.089,2.77155 3.045,3.58455"
+                          id="Fill-1"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="section my-process">
         <div class="body">
           <div class="title">
-            <div class="header-1">Skills and Knowledge</div>
-            <div class="header-2">Skills and Knowledge</div>
+            <div class="header-1">My Process</div>
             <div class="underscore"></div>
           </div>
           <div class="content"><div class="graphics"></div></div>
         </div>
       </div>
-      <div class="section color-bar">
+      <div class="color-bar">
         <div class="body">
-          <div class="title">
-            <div class="header-1">Skills and Knowledge</div>
-            <div class="header-2">Skills and Knowledge</div>
-            <div class="underscore"></div>
-          </div>
+          <div class="title"><div class="sub-header"></div></div>
           <div class="content"><div class="graphics"></div></div>
         </div>
+      </div>
+      <div class="section portfolio">
+        <div class="body">
+          <div class="title">
+            <div class="header">Portfolio</div>
+            <div class="underscore"></div>
+          </div>
+          <div class="content">
+            <div class="tiles-container">
+              <div class="first project-tile"></div>
+              <div class="second project-tile"></div>
+              <div class="third project-tile"></div>
+              <div class="fourth project-tile"></div>
+              <div class="fifth project-tile"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lightbox modal hidden">
+        <div class="backdrop"></div>
+        <div class="content">hello world</div>
       </div>
     </main>
 
+    <script src="js/vendor/bodyScrollLock.min.js"></script>
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="js/lottie.js"></script>
     <script src="js/bodymovin.js"></script>
@@ -835,6 +921,13 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/portfolio.js"></script>
+
+    <script>
+      Modal.init()
+      Portfolio.init()
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

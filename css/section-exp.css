@@ -2,30 +2,26 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.075);
 }
 
 .section.exp .title {
-  margin: 10vw 0 0 10vw;
-  position: relative;
   display: flex;
   flex-direction: column;
+  padding: 5vw 0 0 5vw;
 }
 
 .section.exp .title .header {
-  position: relative;
   font-family: 'Metropolis Regular';
-  font-size: 2vw;
+  font-size: 37px;
   color: #505050;
 }
 
 .section.exp .title .underscore {
-  position: relative;
-  height: 8vh;
-  width: 5vw;
-  border: 0;
   border-top: 0.25vw solid #e54e40;
-  margin: 2vw 0 0 0.1vw;
+  margin-top: 40px;
+  max-width: 100px;
+  min-width: 100px;
 }
 
 .section.exp .content {
@@ -33,22 +29,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 5vw 0 10vw;
+  padding: 40px 0 0 5vw;
 }
 
 .section.exp .jobs {
-  position: relative;
   display: flex;
   flex-direction: row;
 }
 
+.section.exp .job {
+  flex: 1;
+  display: flex;
+}
+
 .section.exp .text{
-  position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 19.25vw;
-  margin: 0 2vw 0 0;
+  padding: 0 2vw 0 0;
 }
 
 .section.exp .header .role {
@@ -74,85 +72,78 @@
   font-family: 'Metropolis Regular';
   font-size: 15px;
   color: #505050;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .section.exp .timeline {
-  position: relative;
   display: flex;
+  color: #505050;
   flex-direction: column;
 }
 
 .section.exp .timeline-svg {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 3vh 0 3vh 0;
+  padding: 30px 0 30px 0;
+
 }
 
 .section.exp .timeline .dates {
-  position: relative;
   display: flex;
   flex-direction: row;
 }
 
 .section.exp .timeline .dates .mmddyy {
-  position: relative;
+  flex: 1;
   display: flex;
   flex-direction: column;
   font-family: 'Metropolis Regular';
   font-size: 15px;
   color: #505050;
-  width: 21.25vw;
 }
 
-.job-1 {
-  position: relative;
+.job.first {
   opacity: 0;
   transition: opacity .75s;
   transition-delay: 0s;
 }
 
-.transitioned-exp .job-1 {
+.transitioned-exp .job.first {
   opacity: 1;
 }
 
-.job-2 {
-  position: relative;
+.job.second {
   opacity: 0;
   transition: opacity .75s;
   transition-delay: .5s;
 }
 
-.transitioned-exp .job-2 {
+.transitioned-exp .job.second {
   opacity: 1;
 }
 
-.job-3 {
-  position: relative;
+.job.third {
   opacity: 0;
   transition: opacity .75s;
   transition-delay: 1s;
 }
 
-.transitioned-exp .job-3 {
+.transitioned-exp .job.third {
   opacity: 1;
 }
 
-.job-4 {
-  position: relative;
+.job.fourth {
   opacity: 0;
   transition: opacity .75s;
   transition-delay: 1.5s;
 }
 
-.transitioned-exp .job-4 {
+.transitioned-exp .job.fourth {
   opacity: 1;
 }
 
 .mmddyy.one {
-  position: relative;
   opacity: 0;
   transition: opacity .75s;
   transition-delay: 0s;
@@ -163,7 +154,6 @@
 }
 
 .mmddyy.two {
-  position: relative;
   opacity: 0;
   transition: opacity .75s;
   transition-delay: .5s;
@@ -174,7 +164,6 @@
 }
 
 .mmddyy.three {
-  position: relative;
   opacity: 0;
   transition: opacity .75s;
   transition-delay: 1s;
@@ -185,7 +174,6 @@
 }
 
 .mmddyy.four {
-  position: relative;
   opacity: 0;
   transition: opacity .75s;
   transition-delay: 1.5s;
@@ -195,39 +183,108 @@
   opacity: 1;
 }
 
-.resume-button {
-  background: #ffffff;
-  border: 3px solid #e54e40;
-  position: absolute;
-  left: 10vw;
-  height: 25px;
-  width: 120px;
+.resume-button-wrapper {
   bottom: 5vw;
+  left: 10vw;
+  position: absolute;
   display: flex;
-  align-content: center;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 300ms;
+  justify-content: flex-start;
+  padding-top: 40px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition: box-shadow .25s;
+  transition: transform .05s;
+}
+
+.resume-button {
+  align-items: center;
+  background-color: #ffffff;
+  color: #e54e40;
+  border: 3px solid #e54e40;
+  padding: 2px 10px;
+  display: flex;
   cursor: pointer;
   user-select: none;
+  transition: all 250ms;
+}
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.resume-button-wrapper:hover, .resume-button-wrapper:focus, .resume-button-wrapper:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-in-out, ease-in-out;
+  animation-timing-function: ease-in-out, ease-in-out;
+  -webkit-animation-iteration-count: 2, infinite;
+  animation-iteration-count: 2, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate, forwards;
+  animation-direction: alternate, forwards;
+  box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.1);
+  transition: all .25s;
 }
 
 .resume-button .button-content {
-  font-family: 'Metropolis Semibold';
+  font-family: 'Metropolis Semibold', sans-serif;
   font-size: 12px;
-  color: #e54e40;
   margin-top: 6px;
-  padding: 0 0 0 10px;
+  padding-right: 22px;
 }
 
 .resume-button .button-graphic {
-  background: url(/arrow.svg) no-repeat;
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 5px;
-  top: 8px;
-}
-
-.resume-button:hover {
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  min-height: 10px;
+  min-width: 6px;
 }

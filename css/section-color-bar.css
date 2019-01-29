@@ -1,0 +1,8 @@
+.color-bar {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background: url(/color-bar-background.jpg) no-repeat center center;
+  background-size: cover;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+}

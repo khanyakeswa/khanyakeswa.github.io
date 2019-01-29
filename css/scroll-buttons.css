@@ -8,6 +8,8 @@
   opacity: 0;
   transition: opacity .2s;
   transition-delay: .5s;
+  cursor: pointer;
+  user-select: none;
 }
 
 .collapsed .scroll-up {
@@ -43,6 +45,8 @@
   bottom: 1.75vw;
   z-index: 3;
   animation: bounce-2 2s infinite;
+  cursor: pointer;
+  user-select: none;
 }
 
 @keyframes bounce-2 {
