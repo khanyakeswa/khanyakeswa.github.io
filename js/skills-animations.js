@@ -24,6 +24,16 @@ const LottieAnimations = {
     renderer: 'svg',
     path: '/Animations/skills_graph_3.json'
   }),
+
+  // colorbar: lottie.loadAnimation({
+  //   container: document.querySelector('.color-bar .body'),
+  //   isFrame: true,
+  //   autoplay: true,
+  //   loop: true,
+  //   renderer: 'svg',
+  //   path: '/Animations/color-bar.json'
+  // }),
+
   hasSkillsGraph1Played: false,
   hasSkillsGraph2Played: false,
   hasSkillsGraph3Played: false
