@@ -5,39 +5,33 @@
 }
 
 .section.my-process .title {
-  margin: 10vw 0 0 10vw;
-  position: relative;
   display: flex;
   flex-direction: column;
+  padding: 70px 0 0 70px;
 }
 
 .section.my-process .title .header-1 {
-  position: relative;
   font-family: 'Metropolis Regular';
-  font-size: 2vw;
+  font-size: 37px;
   color: #505050;
 }
 
 .section.my-process .title .header-2 {
-  position: relative;
   font-family: 'Metropolis Regular';
-  font-size: 2vw;
+  font-size: 37px;
   color: #e54e40;
 }
 
 .section.my-process .title .underscore {
-  position: relative;
-  height: 8vh;
-  width: 5vw;
-  border: 0;
-  border-top: 0.25vw solid #e54e40;
-  margin: 2vw 0 0 0.1vw;
+  border-top: 4px solid #e54e40;
+  margin-top: 40px;
+  max-width: 100px;
+  min-width: 100px;
 }
 
 .section.my-process .content {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin: 0 5vw 0 10vw;
+  padding: 40px 0 0 70px;
 }

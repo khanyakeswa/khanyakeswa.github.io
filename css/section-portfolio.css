@@ -1,52 +1,98 @@
 .section.portfolio {
   height: 100vh;
   display: flex;
+}
+
+.section.portfolio .body {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-width: 400px;
 }
 
 .section.portfolio .title {
-  margin: 10vw 0 0 10vw;
-  position: relative;
   display: flex;
   flex-direction: column;
+  padding-left: 70px;
 }
 
 .section.portfolio .title .header {
-  position: relative;
+  display: flex;
   font-family: 'Metropolis Regular';
-  font-size: 2vw;
+  font-size: 37px;
   color: #505050;
 }
 
 .section.portfolio .title .underscore {
-  position: relative;
-  height: 8vh;
-  width: 5vw;
-  border: 0;
-  border-top: 0.25vw solid #e54e40;
-  margin: 2vw 0 0 0.1vw;
+  border-top: 4px solid #e54e40;
+  margin-top: 40px;
+  max-width: 100px;
+  min-width: 100px;
+}
+
+.section.portfolio .tile-label-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 400px;
+  height: 140px;
+  bottom: 70px;
+  padding: 0 0 0 70px; 
+  user-select: none;
+}
+
+.section.portfolio .tile-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: 'Metropolis Semibold';
+}
+
+.section.portfolio .tile-label .label {
+  position: absolute;
+  font-family: 'Metropolis Regular';
+  color: #505050;
+  font-size: 15px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.section.portfolio .tile-label .caption {
+  position: absolute;
+  line-height: 35px;
+  font-family: 'Metropolis Semibold';
+  color: #e54e40;
+  font-size: 120px;
+  opacity: 0;
+  transform: translateX(400px);
+  transition: all .25s;
+}
+
+.hovered .section.portfolio .tile-label.one .caption {
+  transform: translateX(0);
+  opacity: .1;
 }
 
 .section.portfolio .tiles-container {
   display: flex;
   flex-direction: row;
-  position: absolute;
   background: #000;
-  top: 5vw;
-  left: 35vw;
-  width: 60vw;
-  height: calc(100vh - 10vw);
+  top: 70px;
+  right: 70px;
+  width: 100%;
+  height: calc(100vh - 140px);
+  overflow: hidden;
 }
 
 .tiles-container .project-tile {
-  position: relative;
+  width: 25%;
   background: no-repeat center center;
-  background-size: cover;
-  flex: 1;
+  display: flex;
   cursor: pointer;
   user-select: none;
-  opacity: 1;
-  transition: opacity .25s;
+  min-width: 140px;
+  transition: opacity 250ms;
 }
 
 .project-tile:hover {
@@ -66,9 +112,5 @@
 }
 
 .project-tile.fourth {
-  background-image: url(/322466-bullet-train-wallpaper.jpg);
-}
-
-.project-tile.fifth {
   background-image: url(/322466-bullet-train-wallpaper.jpg);
 }

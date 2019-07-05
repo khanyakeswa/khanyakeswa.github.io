@@ -28,10 +28,28 @@
   top: 0;
 }
 
-.modal .content {
+.project.modal .content {
   background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  position: relative;
+  position: absolute;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.15);
+  width: calc(100% - 140px);
+  height: calc(100% - 140px);
+  top: 70px;
+  right: 70px;
+  bottom: 70px;
+  left: 70px;
+  overflow-y: auto;
+}
+
+.project.first .caption {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Metropolis Semibold';
+  font-size: 15px;
+  height: 70px;
+  width: 100%;
+  bottom: 0;
 }

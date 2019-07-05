@@ -1,10 +1,10 @@
 .sidebar .scene {
-  width: 35vw;
-  height: 75px;
+  width: 35%;
+  height: 60px;
 }
 
 .carousel {
-  width: 35vw;
+  width: 35%;
   height: 75px;
   position: absolute;
   transform: translateZ(-110px);
@@ -19,16 +19,17 @@
 
 .carousel-cell {
   position: absolute;
-  width: 30vw;
+  width: 430px;
   height: 80px;
   top: 0px;
   line-height: 80px;
-  font-size: 3vw;
+  font-size: 45px;
   font-family: 'Metropolis Semibold';
   color: #e54e40;
   text-align: left;
   transition: transform 1s, opacity 1s;
   animation-name: fadeIn;
+  overflow-wrap: break-word;
 }
 
 @keyframes fadeIn {

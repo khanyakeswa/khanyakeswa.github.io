@@ -17,7 +17,11 @@ main {
 
 .section {
   min-height: 100vh;
-  padding: 5vw;
+  padding: 70px;
   position: relative;
   width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }

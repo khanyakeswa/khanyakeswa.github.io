@@ -1,7 +1,7 @@
 .scroll-indicator {
   position: fixed;
-  width: .5vw;
-  left: 2.25vw;
+  width: 10px;
+  left: 30px;
   top: calc(50vh - 61.65px);
   z-index: 3;
   opacity: 0;
@@ -10,6 +10,10 @@
 
 .collapsed .scroll-indicator {
   opacity: 1;
+}
+
+.lightbox-effect .scroll-indicator {
+  visibility: hidden;
 }
 
 .enter-section-1 .scroll-indicator .dot-1 {
@@ -56,3 +60,23 @@
   fill: #d1d3d4;
   transition: fill .2s;
 }
+
+.enter-section-6 .scroll-indicator .dot-6 {
+  fill: #e54e40;
+  transition: fill .2s;
+}
+.exit-section-6 .scroll-indicator .dot-6 {
+  fill: #d1d3d4;
+  transition: fill .2s;
+}
+
+.enter-section-7 .scroll-indicator .dot-7 {
+  fill: #e54e40;
+  transition: fill .2s;
+}
+.exit-section-7 .scroll-indicator .dot-7 {
+  fill: #d1d3d4;
+  transition: fill .2s;
+}
+
+

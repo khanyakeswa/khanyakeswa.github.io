@@ -1,13 +1,14 @@
 .section.skills {
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 5vw 0 0 5vw;
+  padding: 70px 0 0 70px;
 }
 
 .section.skills .title {
   display: flex;
   flex-direction: column;
-  padding: 5vw 0 0 5vw;
+  padding: 70px 0 0 70px;
 }
 
 .section.skills .title .header {
@@ -17,7 +18,7 @@
 }
 
 .section.skills .title .underscore {
-  border-top: 0.25vw solid #e54e40;
+  border-top: 4px solid #e54e40;
   margin-top: 40px;
   max-width: 100px;
   min-width: 100px;
@@ -52,20 +53,20 @@
 .section.skills .charts .UI-UX {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
   background-size: cover;
 }
 
 .section.skills .charts .Industrial {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
   background-size: cover;
 }
 
 .section.skills .charts .misc {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
   background-size: cover;
 }

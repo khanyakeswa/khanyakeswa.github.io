@@ -1,14 +1,20 @@
 .section.exp {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  max-height: 100vh;
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.075);
 }
 
-.section.exp .title {
+.section.exp .body {
   display: flex;
   flex-direction: column;
-  padding: 5vw 0 0 5vw;
+  height: calc(100vh - 140px);
+}
+
+.section.exp .title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0 0 70px;
+  flex-shrink: 0;
 }
 
 .section.exp .title .header {
@@ -18,35 +24,46 @@
 }
 
 .section.exp .title .underscore {
-  border-top: 0.25vw solid #e54e40;
+  border-top: 4px solid #e54e40;
   margin-top: 40px;
   max-width: 100px;
   min-width: 100px;
 }
-
 .section.exp .content {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 0 0 5vw;
+  padding: 0 0 70px 70px;
+  height: 100%;
+  bottom: 0px;
 }
 
 .section.exp .jobs {
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 
 .section.exp .job {
   flex: 1;
   display: flex;
+  width: 25%;
 }
 
 .section.exp .text{
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding: 0 2vw 0 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px 0 0;
+  overflow-x: none;
+  overflow-y: auto;
+}
+
+.section.exp .text::-webkit-scrollbar {
+  display: none;
 }
 
 .section.exp .header .role {
@@ -66,32 +83,42 @@
   font-family: 'Metropolis Regular';
   font-size: 15px;
   color: #505050;
+  margin-bottom: 15px;
 }
 
 .section.exp .description {
   font-family: 'Metropolis Regular';
   font-size: 15px;
   color: #505050;
-  padding-top: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.section.exp .description::-webkit-scrollbar {
+  display: none;
 }
 
 .section.exp .timeline {
   display: flex;
   color: #505050;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .section.exp .timeline-svg {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 30px 0 30px 0;
-
+  width: 100%;
+  min-height: 18.07px;
+  overflow: hidden;
 }
 
 .section.exp .timeline .dates {
   display: flex;
   flex-direction: row;
+}
+
+.section.exp .end {
+  padding-bottom: 30px;
 }
 
 .section.exp .timeline .dates .mmddyy {
@@ -184,8 +211,8 @@
 }
 
 .resume-button-wrapper {
-  bottom: 5vw;
-  left: 10vw;
+  bottom: 70px;
+  left: 140px;
   position: absolute;
   display: flex;
   justify-content: flex-start;
@@ -282,7 +309,7 @@
   font-family: 'Metropolis Semibold', sans-serif;
   font-size: 12px;
   margin-top: 6px;
-  padding-right: 22px;
+  padding-right: 10px;
 }
 
 .resume-button .button-graphic {

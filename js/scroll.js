@@ -11,6 +11,7 @@ let enterSectionThree = false
 let enterSectionFour = false
 let enterSectionFive = false
 let enterSectionSix = false
+let enterSectionSeven = false
 
 let exitSectionOne = false
 let exitSectionTwo = false
@@ -18,6 +19,7 @@ let exitSectionThree = false
 let exitSectionFour = false
 let exitSectionFive = false
 let exitSectionSix = false
+let exitSectionSeven = false
 
 function doSomething(scroll_pos) {
   // navbar.style.transform = `translateX(${scroll_pos}px)`
@@ -68,12 +70,15 @@ function doSomething(scroll_pos) {
   }
 
   // scroll indicator sections
+  const colorBarHeight = document.getElementsByClassName('color-bar');
+
   const isScrolledPastSectionOne = scroll_pos >= 0.5 * window.innerHeight
   const isScrolledPastSectionTwo = scroll_pos >= 1.5 * window.innerHeight
   const isScrolledPastSectionThree = scroll_pos >= 2.5 * window.innerHeight
   const isScrolledPastSectionFour = scroll_pos >= 3.5 * window.innerHeight
   const isScrolledPastSectionFive = scroll_pos >= 4.5 * window.innerHeight
-  const isScrolledPastSectionSix = scroll_pos >= 5.5 * window.innerHeight
+  const isScrolledPastSectionSix = scroll_pos >= ((4.5 * window.innerHeight) + colorBarHeight)
+  const isScrolledPastSectionSeven = scroll_pos >= ((5.5 * window.innerHeight) + colorBarHeight)
 
   //Scroll-dot 1
   if (!enterSectionTwo && isScrolledPastSectionOne) {
@@ -142,6 +147,40 @@ function doSomething(scroll_pos) {
   if (exitSectionFive && !isScrolledPastSectionFive) {
     document.body.classList.remove('exit-section-5')
     exitSectionFive = false
+  }
+
+  if (!enterSectionSix && isScrolledPastSectionFive) {
+    document.body.classList.add('enter-section-6')
+    enterSectionSix = true
+  }
+  if (enterSectionSix && !isScrolledPastSectionFive) {
+    document.body.classList.remove('enter-section-6')
+    enterSectionSix = false
+  }
+  if (!exitSectionSix && isScrolledPastSectionSix) {
+    document.body.classList.add('exit-section-6')
+    exitSectionSix = true
+  }
+  if (exitSectionSix && !isScrolledPastSectionSix) {
+    document.body.classList.remove('exit-section-6')
+    exitSectionSix = false
+  }
+
+  if (!enterSectionSeven && isScrolledPastSectionSix) {
+    document.body.classList.add('enter-section-7')
+    enterSectionSeven = true
+  }
+  if (enterSectionSeven && !isScrolledPastSectionSix) {
+    document.body.classList.remove('enter-section-7')
+    enterSectionSeven = false
+  }
+  if (!exitSectionSeven && isScrolledPastSectionSeven) {
+    document.body.classList.add('exit-section-7')
+    exitSectionSeven = true
+  }
+  if (exitSectionSix && !isScrolledPastSectionSeven) {
+    document.body.classList.remove('exit-section-7')
+    exitSectionSeven = false
   }
 }
 
