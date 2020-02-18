@@ -65,7 +65,7 @@
 
 .section.about-me .half .graphics {
   display: flex;
-  height: 250px;
+  height: 300px;
   justify-content: center;
   position: relative;
   flex-shrink: 0;
@@ -73,7 +73,7 @@
 
 .section.about-me .half .graphic {
   background: no-repeat center center;
-  background-size: contain;
+  background-size: contain; 
   flex: 1;
 }
 
@@ -96,7 +96,7 @@
 .section.about-me .half .caption {
   font-family: 'Metropolis Light';
   font-size: 15px;
-  padding-top: 30px;
+  padding: 30px 30px;
   color: #505050;
   overflow-y: scroll;
 }
